@@ -41,7 +41,7 @@ nav a {
 	text-decoration: none;
 }
 nav a:first-child {
-	margin-left: 0
+	margin-left: 20px
 }
  nav a:last-child {
 	margin-right: 0
