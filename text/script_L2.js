@@ -5,9 +5,9 @@ var svgEnd = '</svg>';
 var svgImgPlus = svgCircle + svgVertLine + svgHorLine + svgEnd;
 var svgImgMinus = svgCircle + svgHorLine + svgEnd;
 
-function addOnClick(button, informer, text){
+var addOnClick = function addOnClick(button, informer, text){
     let className = informer.className;
-    if( className.indexOf(' expanded') == -1 ) {
+        if( className.indexOf(' expanded') == -1 ) {
         className += ' expanded';
         button.innerHTML = svgImgMinus + text;
     	button.style.fontStyle = 'normal';
@@ -23,13 +23,3 @@ function addOnClick(button, informer, text){
 	informer.className = className;
 	return false;
 }
-
-/*var classname = document.getElementsByClassName("classname");
-
-var myFunction = function() {
-   
-};
-
-for (var i = 0; i < classname.length; i++) {
-    classname[i].addEventListener('click', myFunction, false);
-}*/
