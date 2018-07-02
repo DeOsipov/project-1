@@ -9,13 +9,13 @@ var addOnClick = function addOnClick(button, informer, text){
     let className = informer.className;
         if( className.indexOf(' expanded') == -1 ) {
         className += ' expanded';
-        button.innerHTML = svgImgMinus + text;
+        button.innerHTML = svgImgMinus + text + '</span>';
     	button.style.fontStyle = 'normal';
         button.style.textTransform = "uppercase";
-        button.style.fontSize = "25px";
+        button.style.fontSize = "20px";
     } else {
         className = className.replace(' expanded', '');
-        button.innerHTML = svgImgPlus + text;
+        button.innerHTML = svgImgPlus + text + '</span>';
         button.style.fontStyle = 'italic';
         button.style.textTransform = "lowercase";
         button.style.fontSize = "25px";

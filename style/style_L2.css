@@ -1,4 +1,4 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	letter-spacing: 0.1em;
@@ -34,19 +34,18 @@ nav * {
 	display: inline-block;
 	font-size: 13px
 }
+/* ---------------index_L1-----------------------*/
 #logo {
-	height: 116px;
-	width: 157px;
 	background: url(../images/logo.png) no-repeat;
 	background-size: cover;
+	height: 116px;
+	width: 157px;
 	margin-right: 40px;
 }
 nav a {
 	position: relative;
 	margin: 15px 25px;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3)
-}
-nav a {
 	padding: 10px;
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
@@ -91,11 +90,14 @@ nav a:focus::after {
 }
 /*--------------------article--------------------*/
 article {
-	/*letter-spacing: 0.2em*/;
 	padding-left: 43px;
+}
+article > * {
+	margin: 15px 0;
 }
 article a {	
 	font-size: 25px;
+	line-height: 25px;
 	font-style: italic;
 	text-transform: none
 }
@@ -121,7 +123,7 @@ article div {
 /*--------------------footer--------------------*/
 #main {
 	height: 100%;
-	min-height: 100px;
+	min-height: 600px;
 	margin-bottom: -30px
 }
 #push {
